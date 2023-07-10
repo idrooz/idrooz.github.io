@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Champagne;
+	src: url(cac_champagne.woff) format('woff'),
+	     url(cac_champagne.ttf) format('ttf');
+}
+
+/*
+  WEB110-N886
+	Project Part 1
+	Charlotte Coffee Company
+	Isaac Drooz
+	filename: projectpart1_styles.css
+*/
+
+html {
+   background-color: rgb(229, 43, 80);
+}
+
+/* Page Body Styles */
+body {
+   background-color: rgb(255, 170, 153);
+   font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+a:hover {
+	color: red;
+}
+
+p::first-letter {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+p:: first-line {
+	text-decoration: underline;
+}
+
+.container {
+  width: 500px;
+}
+
+.block {
+  background-color: lightblue;
+  width: 100%;
+  height: 100px;
+}
+
+.floating {
+  background-color: lightgreen;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.relative {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+.absolute {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+<style>
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  legend {
+    font-weight: bold;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+</style>
+
+/* Section Styles */
+
+section#main {
+   padding-left: 20px;
+}
+
+/* Article Styles */
+
+article > h1 {
+   font-family: Verdana, Geneva, Arial, sans-serif;
+   font-size: 2.2em;
+   font-weight: normal;
+   margin: 0.5em 0;
+}
+
+article p {
+   line-height: 1.2;
+   margin-bottom: 2em;
+}
+
+/* Footer Styles */
+
+footer {
+	color: rgb(0, 0, 0);
+	background-color: rgb(238, 38, 0)
+	font-size: 0.9em;
+	padding: 10px 0px;
+	text-align: center;
+}
+

@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/*
+   WEB110-N886
+	Project Part 1
+	Charlotte Coffee Company
+	Isaac Drooz
+	filename: projectpart1_media.css
+*/
+
+@media (max-width: 500px) {
+  article img {
+    display: none;
+  }
+  .submenu ul {
+    text-align: center;
+  }
+}
+
+@media (min-width: 501px) {
+  nav {
+    float: left;
+    width: 130px;
+    height: 400px;
+    margin: 30px 25px 0 0;
+  }
+}
+
+@media (min-width: 710px) {
+  nav{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  .mainmenu ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  ul.mainmenu li {
+    flex: 0 1 120px
+  }
+}
